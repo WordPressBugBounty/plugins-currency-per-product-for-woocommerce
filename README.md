@@ -1,0 +1,1 @@
+# plugins-currency-per-product-for-woocommerce
