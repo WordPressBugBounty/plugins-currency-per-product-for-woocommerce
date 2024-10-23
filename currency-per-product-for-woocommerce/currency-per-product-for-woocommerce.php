@@ -5,13 +5,17 @@
  * Plugin Name: Currency per Product for WooCommerce
  * Plugin URI: https://www.tychesoftwares.com/store/premium-plugins/currency-per-product-for-woocommerce/
  * Description: Set and display prices for WooCommerce products in different currencies.
- * Version: 1.9.0
+ * Version: 1.10.0
  * Author: Tyche Softwares
  * Author URI: https://www.tychesoftwares.com/
  * Text Domain: currency-per-product-for-woocommerce
  * Domain Path: /langs
  * Copyright: © 2021 Tyche Softwares
- * WC tested up to: 9.1.2
+ * Requires PHP: 7.4
+ * WC requires at least: 5.0.0
+ * WC tested up to: 9.3.3
+ * Tested up to: 6.6.2
+ * Requires Plugins: woocommerce
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -60,7 +64,7 @@ if ( ! class_exists( 'Alg_WC_CPP' ) ) :
 		 * @var   string
 		 * @since 1.0.0
 		 */
-		public $version = '1.9.0';
+		public $version = '1.10.0';
 		/**
 		 * Core.
 		 *
@@ -169,33 +173,37 @@ if ( ! class_exists( 'Alg_WC_CPP' ) ) :
 		 * @since   1.0.0
 		 */
 		public function includes() {
-			require_once 'includes/component/plugin-tracking/class-tyche-plugin-tracking.php';
-			new Tyche_Plugin_Tracking(
-				array(
-					'plugin_name'       => 'Currency per Product for WooCommerce',
-					'plugin_locale'     => 'currency-per-product-for-woocommerce',
-					'plugin_short_name' => 'cpp_lite',
-					'version'           => $this->version,
-					'blog_link'         => 'https://www.tychesoftwares.com/docs/woocommerce-currency-per-product/currency-usage-tracking/',
-				)
-			);
-
 			// Functions.
 			require_once 'includes/functions/alg-wc-cpp-functions.php';
 			require_once 'includes/functions/alg-wc-cpp-exchange-rates-functions.php';
 			// Core.
 			$this->core = require_once 'includes/class-alg-wc-cpp-core.php';
-
-			require_once 'includes/class-tyche-plugin-deactivation.php';
-			new Tyche_Plugin_Deactivation(
-				array(
-					'plugin_name'       => 'Currency per Product for WooCommerce',
-					'plugin_base'       => 'currency-per-product-for-woocommerce/currency-per-product-for-woocommerce.php',
-					'script_file'       => $this->plugin_url() . '/assets/js/plugin-deactivation.js',
-					'plugin_short_name' => 'cpp_lite',
-					'version'           => $this->version,
-				)
-			);
+			// plugin deactivation.
+			if ( is_admin() ) {
+				if ( strpos( $_SERVER['REQUEST_URI'], 'plugins.php' ) !== false || strpos( $_SERVER['REQUEST_URI'], 'action=deactivate' ) !== false || ( strpos( $_SERVER['REQUEST_URI'], 'admin-ajax.php' ) !== false && isset( $_POST['action'] ) && $_POST['action'] === 'tyche_plugin_deactivation_submit_action' ) ) { //phpcs:ignore
+					require_once 'includes/component/plugin-deactivation/class-tyche-plugin-deactivation.php';
+					new Tyche_Plugin_Deactivation(
+						array(
+							'plugin_name'       => 'Currency per Product for WooCommerce',
+							'plugin_base'       => 'currency-per-product-for-woocommerce/currency-per-product-for-woocommerce.php',
+							'script_file'       => $this->plugin_url() . '/assets/js/plugin-deactivation.js',
+							'plugin_short_name' => 'cpp_lite',
+							'version'           => $this->version,
+							'plugin_locale'     => 'currency-per-product-for-woocommerce',
+						)
+					);
+				}
+				require_once 'includes/component/plugin-tracking/class-tyche-plugin-tracking.php';
+				new Tyche_Plugin_Tracking(
+					array(
+						'plugin_name'       => 'Currency per Product for WooCommerce',
+						'plugin_locale'     => 'currency-per-product-for-woocommerce',
+						'plugin_short_name' => 'cpp_lite',
+						'version'           => $this->version,
+						'blog_link'         => 'https://www.tychesoftwares.com/docs/woocommerce-currency-per-product/currency-usage-tracking/',
+					)
+				);
+			}
 		}
 
 		/**
