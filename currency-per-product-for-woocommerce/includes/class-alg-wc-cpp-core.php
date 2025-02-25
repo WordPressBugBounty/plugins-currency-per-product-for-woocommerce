@@ -78,6 +78,9 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 					$this->custom_currency_symbol_template = get_option( 'alg_wc_cpp_custom_currency_symbol_template', '%currency_code%%currency_symbol%' );
 				}
 
+				// Currency for the products on the custom page created using the Featured Products block.
+				add_filter( 'woocommerce_get_price_html', array( $this, 'cpp_change_currency_for_featured_products_block' ), PHP_INT_MAX, 2 );
+
 				// Add to cart.
 				add_filter( 'woocommerce_add_cart_item_data', array( $this, 'add_cart_item_data' ), PHP_INT_MAX, 3 );
 				add_filter( 'woocommerce_add_cart_item', array( $this, 'add_cart_item' ), PHP_INT_MAX, 2 );
@@ -185,9 +188,9 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 				$product_ids = $new_ids;
 				add_filter(
 					'posts_clauses',
-					function( $clauses ) {
-						$_GET['__min_price'] = sanitize_text_field( wp_unslash( $_GET['min_price'] ) );// phpcs:ignore WordPress.Security.NonceVerification
-						$_GET['__max_price'] = sanitize_text_field( wp_unslash( $_GET['max_price'] ) );// phpcs:ignore WordPress.Security.NonceVerification
+					function ( $clauses ) {
+						$_GET['__min_price'] = sanitize_text_field( wp_unslash( $_GET['min_price'] ) );// phpcs:ignore
+						$_GET['__max_price'] = sanitize_text_field( wp_unslash( $_GET['max_price'] ) );// phpcs:ignore
 						unset( $_GET['min_price'] );// phpcs:ignore WordPress.Security.NonceVerification
 						unset( $_GET['max_price'] );// phpcs:ignore WordPress.Security.NonceVerification
 						return $clauses;
@@ -196,7 +199,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 				);
 				add_filter(
 					'posts_clauses',
-					function( $clauses ) {
+					function ( $clauses ) {
 						if ( isset( $_GET['__min_price'] ) || isset( $_GET['__max_price'] ) ) {// phpcs:ignore WordPress.Security.NonceVerification
 							$_GET['min_price'] = ( sanitize_text_field( wp_unslash( $_GET['__min_price'] ) ) );// phpcs:ignore WordPress.Security.NonceVerification
 							$_GET['max_price'] = sanitize_text_field( wp_unslash( $_GET['__max_price'] ) );// phpcs:ignore WordPress.Security.NonceVerification
@@ -304,7 +307,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		 * @param array  $meta_query Meta query array.
 		 * @param string $_wc_query WC Query.
 		 */
-		public function price_filter_meta_query( $meta_query, $_wc_query ) {
+		public function price_filter_meta_query( $meta_query, $_wc_query ) { // phpcs:ignore
 			if ( ! empty( $meta_query['price_filter']['price_filter'] ) ) {
 				$meta_query['price_filter']['key'] = '_alg_wc_cpp_converted_price';
 			}
@@ -335,12 +338,12 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		 */
 		public function add_sorting_by_converted_price( $args ) {
 			$wc_clean      = ( ALG_WC_CPP_IS_WC_VERSION_BELOW_3_0_0 ? 'woocommerce_clean' : 'wc_clean' );
-			$orderby_value = ( isset( $_GET['orderby'] ) ? $wc_clean( sanitize_text_field( wp_unslash( $_GET['orderby'] ) ) ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) ) );
+			$orderby_value = ( isset( $_GET['orderby'] ) ? $wc_clean( sanitize_text_field( wp_unslash( $_GET['orderby'] ) ) ) : apply_filters( 'woocommerce_default_catalog_orderby', get_option( 'woocommerce_default_catalog_orderby' ) ) ); // phpcs:ignore
 			$orderby_value = explode( '-', $orderby_value );
 			$orderby       = esc_attr( $orderby_value[0] );
 			$orderby       = strtolower( $orderby );
 			if ( 'price' === $orderby ) {
-				$args['meta_key'] = '_alg_wc_cpp_converted_price';
+				$args['meta_key'] = '_alg_wc_cpp_converted_price'; // phpcs:ignore
 				$args['orderby']  = 'meta_value_num';
 			}
 			return $args;
@@ -455,7 +458,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		 * @param object  $_product Product object.
 		 * @param boolean $display Include taxes.
 		 */
-		public function get_variation_prices_hash( $price_hash, $_product, $display ) {
+		public function get_variation_prices_hash( $price_hash, $_product, $display ) { // phpcs:ignore
 			$price_hash['alg_wc_cpp']['currency']      = $this->get_product_currency( alg_wc_cpp_get_product_id_or_variation_parent_id( $_product ) );
 			$price_hash['alg_wc_cpp']['exchange_rate'] = alg_wc_cpp_get_currency_exchange_rate( $price_hash['alg_wc_cpp']['currency'] );
 			return $price_hash;
@@ -519,7 +522,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 						} else {
 							return $package_rates;
 						}
-					default: // case 'convert_shop_default':.
+					default: // case convert_shop_default:.
 						return $package_rates;
 				}
 			}
@@ -549,7 +552,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 						$_product_cats = alg_wc_cpp_get_product_terms( $product_id, 'product_cat' );
 				}
 				if ( $do_check_by_product_tags ) {
-						$_product_tags= alg_wc_cpp_get_product_terms( $product_id, 'product_tag' );
+						$_product_tags = alg_wc_cpp_get_product_terms( $product_id, 'product_tag' );
 				}
 				$total_number = apply_filters( 'alg_wc_cpp', 1, 'value_total_number' );
 				for ( $i = 1; $i <= $total_number; $i++ ) {
@@ -737,7 +740,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 							}
 							return $return_price;
 						}
-					default: // case 'convert_shop_default':.
+					default: // case convert_shop_default:.
 						if ( $do_save_prices && isset( $this->saved_prices['cart_checkout'][ $product_id ] ) ) {
 							return $this->saved_prices['cart_checkout'][ $product_id ];
 						}
@@ -817,6 +820,66 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		}
 
 		/**
+		 * For showing correct currency on custom page for the products shown using Woo blocks.
+		 *
+		 * @param string $price_html HTML Price.
+		 * @param object $product Product object.
+		 */
+		public function cpp_change_currency_for_featured_products_block( $price_html, $product ) {
+			if ( 'show_in_different' === get_option( 'alg_wc_cpp_shop_behaviour', 'show_in_different' ) ) {
+				if ( ! $this->is_allowed_page() || ( 'page' === get_post_type() && is_page() && 'job_package' === $product->get_type() ) ) {
+					if ( is_user_logged_in() ) {
+						$vendor_id = get_current_user_id();
+						$page_id   = get_queried_object_id();
+						$seller    = get_post_field( 'post_author', $page_id );
+						if ( function_exists( 'dokan' ) ) {
+							$vendor = dokan()->vendor->get( $seller );
+							if ( ! empty( $vendor ) ) {
+								return $price_html;
+							}
+						}
+					}
+					$product_id = alg_wc_cpp_get_product_id_or_variation_parent_id( $product );
+					if ( $product_id && 'product' === get_post_type( $product_id ) ) {
+						$cpp_currency = $this->get_product_currency( $product_id );
+						if ( '' !== $cpp_currency ) {
+							if ( 'variable' === $product->get_type() ) {
+								$prices = array( $product->get_variation_price( 'min', true ), $product->get_variation_price( 'max', true ) );
+								if ( ! empty( $prices ) ) {
+									$min_price = isset( $prices[0] ) ? $prices[0] : 0;
+									$max_price = isset( $prices[1] ) ? $prices[1] : 0;
+
+									if ( $min_price !== $max_price ) {
+										$price = wc_format_price_range( wc_price( $min_price, array( 'currency' => $cpp_currency ) ), wc_price( $max_price, array( 'currency' => $cpp_currency ) ) );
+										return $price;
+									} elseif ( $product->is_on_sale() && $min_price === $max_price ) {
+										$price = wc_format_sale_price( wc_price( $max_price, array( 'currency' => $cpp_currency ) ), wc_price( $min_price, array( 'currency' => $cpp_currency ) ) );
+										return $price;
+									} else {
+										$price = wc_price( $min_price, array( 'currency' => $cpp_currency ) );
+										return $price;
+									}
+								}
+							} else {
+								$regular_price = $product->get_regular_price();
+								$sale_price    = $product->get_sale_price();
+								if ( '' !== $sale_price && $sale_price < $regular_price ) {
+									$price = wc_format_sale_price( wc_price( $regular_price, array( 'currency' => $cpp_currency ) ), wc_price( $sale_price, array( 'currency' => $cpp_currency ) ) );
+									return $price;
+								} else {
+									$price = wc_price( $regular_price, array( 'currency' => $cpp_currency ) );
+									return $price;
+								}
+							}
+						}
+					}
+					return $price_html;
+				}
+			}
+			return $price_html;
+		}
+
+		/**
 		 * Get cart item from session.
 		 *
 		 * @version 1.0.0
@@ -828,7 +891,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		 */
 		public function get_cart_item_from_session( $item, $values, $key ) {
 			if ( array_key_exists( 'alg_wc_cpp', $values ) ) {
-				$item['data']->alg_wc_cpp = $values['alg_wc_cpp'];
+				$item['data']->update_meta_data( '_alg_wc_cpp', $values['alg_wc_cpp'] ); // Store the value in product meta instead of a dynamic property
 			}
 			return $item;
 		}
@@ -862,7 +925,7 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 		 */
 		public function add_cart_item( $cart_item_data, $cart_item_key ) {
 			if ( isset( $cart_item_data['alg_wc_cpp'] ) ) {
-				$cart_item_data['data']->alg_wc_cpp = $cart_item_data['alg_wc_cpp'];
+				$cart_item_data['data']->update_meta_data( '_alg_wc_cpp', $cart_item_data['alg_wc_cpp'] );
 			}
 			return $cart_item_data;
 		}
@@ -882,13 +945,13 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 				$product_id = alg_wc_cpp_get_product_id_or_variation_parent_id( $product );
 			}
 			// Get ID - product_id in _REQUEST.
-			if ( ! $product_id && isset( $_REQUEST['product_id'] ) ) {
-				$product_id = sanitize_text_field( wp_unslash( $_REQUEST['product_id'] ) );
+			if ( ! $product_id && isset( $_REQUEST['product_id'] ) ) { // phpcs:ignore
+				$product_id = sanitize_text_field( wp_unslash( $_REQUEST['product_id'] ) ); // phpcs:ignore
 			}
 			// Get ID - WooCommerce Bookings plugin.
-			if ( ! $product_id && isset( $_POST['form'] ) ) {
+			if ( ! $product_id && isset( $_POST['form'] ) ) { // phpcs:ignore
 				$posted = array();
-				parse_str( sanitize_text_field( wp_unslash( $_POST['form'] ) ), $posted );
+				parse_str( sanitize_text_field( wp_unslash( $_POST['form'] ) ), $posted ); // phpcs:ignore
 				$product_id = isset( $posted['add-to-cart'] ) ? $posted['add-to-cart'] : 0;
 			}
 			// Get ID - EventON plugin.
@@ -1009,8 +1072,8 @@ if ( ! class_exists( 'Alg_WC_CPP_Core' ) ) :
 			if ( is_admin() ) {
 				global $pagenow;
 				if (
-				( 'post.php' === $pagenow && isset( $_GET['action'] ) && 'edit' === $_GET['action'] ) ||
-				( defined( 'DOING_AJAX' ) && DOING_AJAX && isset( $_REQUEST['action'] ) && is_string( $_REQUEST['action'] ) && 'woocommerce_load_variations' === $_REQUEST['action'] )
+				( 'post.php' === $pagenow && isset( $_GET['action'] ) && 'edit' === $_GET['action'] ) || // phpcs:ignore
+				( defined( 'DOING_AJAX' ) && DOING_AJAX && isset( $_REQUEST['action'] ) && is_string( $_REQUEST['action'] ) && 'woocommerce_load_variations' === $_REQUEST['action'] ) // phpcs:ignore
 				) {
 					return true;
 				}

@@ -5,7 +5,7 @@
  * Plugin Name: Currency per Product for WooCommerce
  * Plugin URI: https://www.tychesoftwares.com/store/premium-plugins/currency-per-product-for-woocommerce/
  * Description: Set and display prices for WooCommerce products in different currencies.
- * Version: 1.11.0
+ * Version: 1.12.0
  * Author: Tyche Softwares
  * Author URI: https://www.tychesoftwares.com/
  * Text Domain: currency-per-product-for-woocommerce
@@ -13,8 +13,8 @@
  * Copyright: © 2021 Tyche Softwares
  * Requires PHP: 7.4
  * WC requires at least: 5.0.0
- * WC tested up to: 9.4.2
- * Tested up to: 6.7.1
+ * WC tested up to: 9.6.2
+ * Tested up to: 6.7.2
  * Requires Plugins: woocommerce
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -64,7 +64,7 @@ if ( ! class_exists( 'Alg_WC_CPP' ) ) :
 		 * @var   string
 		 * @since 1.0.0
 		 */
-		public $version = '1.11.0';
+		public $version = '1.12.0';
 		/**
 		 * Core.
 		 *
@@ -145,7 +145,6 @@ if ( ! class_exists( 'Alg_WC_CPP' ) ) :
 					add_action( 'admin_init', array( $this, 'version_updated' ) );
 				}
 			}
-
 		}
 
 		/**
@@ -279,7 +278,6 @@ if ( ! class_exists( 'Alg_WC_CPP' ) ) :
 				\Automattic\WooCommerce\Utilities\FeaturesUtil::declare_compatibility( 'orders_cache', 'currency-per-product-for-woocommerce/currency-per-product-for-woocommerce.php', true );
 			}
 		}
-
 	}
 
 endif;
@@ -292,7 +290,7 @@ if ( ! function_exists( 'alg_wc_cpp' ) ) {
 	 * @since   1.0.0
 	 * @return  Alg_WC_CPP
 	 */
-	function alg_wc_cpp() {
+	function alg_wc_cpp() { // phpcs:ignore
 		return Alg_WC_CPP::instance();
 	}
 }
