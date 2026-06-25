@@ -3,7 +3,7 @@ Contributors: tychesoftwares
 Tags: woocommerce, currency per product, multicurrency, product currency
 Requires at least: 4.4
 Tested up to: 7.0.0
-Stable tag: 1.15.0
+Stable tag: 2.0.0
 Requires PHP: 7.4
 License: GNU General Public License v3.0
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -118,6 +118,13 @@ There is a number of scenarios that can be implemented with this plugin:
 This plugin communicates with our tracking server to send usage data **only** if the user has explicitly opted in to usage tracking. For detailed information about what is tracked, please refer to our [usage tracking documentation](https://www.tychesoftwares.com/docs/woocommerce-currency-per-product/currency-usage-tracking/).
 
 == Changelog ==
+
+= 2.0.0 (25.06.2026) =
+* New - React-based admin interface for General, Behaviour, Currencises & exchange Rates.
+* Dev - Introduced a REST API layer (cpp/v1) for all admin data operations, with per-endpoint capability checks.
+* Dev - Plugin settings migrated from individual alg_wc_pif_* options to consolidated cpp_general_settings, cpp_behavior_settings, cpp_currencies_settings, cpp_exchange_rates, cpp_advanced_settings.
+* Tweak - Updated for compatibility with WordPress 7.0.
+* Tweak - Updated for compatibility with WooCommerce 10.8.1.
 
 = 1.15.0 (02.06.2026) =
 * Fix - Exchange rate validation error when entering decimal exchange rates for a currency.

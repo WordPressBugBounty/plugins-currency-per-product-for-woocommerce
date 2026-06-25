@@ -1,0 +1,1159 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2024-09-30 12:23+0530\n"
+"PO-Revision-Date: 2024-09-30 12:24+0500\n"
+"Language: \n"
+"Plural-Forms: plurals=2; plural=(n > 1)\n"
+"X-Generator: Eazy Po 1.0.0.0\n"
+
+#: build/admin.js:1
+#: src/screens/configuration.js:44
+msgid "Settings"
+msgstr ""
+
+#: includes/core/class-migration.php:82
+#: includes/core/class-migration.php:256
+#: includes/frontend/class-frontend.php:658
+msgid "Only one product can be added to the cart. Clear the cart or finish the order, before adding another product to the cart."
+msgstr ""
+
+#: includes/core/class-migration.php:83
+#: includes/core/class-migration.php:260
+msgid "Only products with same currency can be added to the cart. Clear the cart or finish the order, before adding products with another currency to the cart."
+msgstr ""
+
+#: includes/admin/class-currency-reports.php:54
+msgid "Merge all currencies"
+msgstr ""
+
+#. Translators: %s is the currency code or the text 'All currencies'.
+#: includes/admin/class-currency-reports.php:56
+#, php-format
+msgid "Show reports only in %s"
+msgstr ""
+
+#: includes/admin/class-currency-reports.php:67
+msgid "All currencies"
+msgstr ""
+
+#. Translators: %s is the currency code or the text 'All currencies'.
+#: includes/admin/class-currency-reports.php:69
+#, php-format
+msgid "Reports currency: %s"
+msgstr ""
+
+#: includes/admin/class-currency-reports.php:108
+msgid "Merge all"
+msgstr ""
+
+#: includes/functions/class-exchange-rates-functions.php:124
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:197
+msgid "European Central Bank (ECB)"
+msgstr ""
+
+#: includes/functions/class-exchange-rates-functions.php:125
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:198
+msgid "TCMB"
+msgstr ""
+
+#: includes/functions/class-exchange-rates-functions.php:126
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:199
+msgid "Free Currency Converter API (free.currencyconverterapi.com)"
+msgstr ""
+
+#: includes/functions/class-exchange-rates-functions.php:127
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:200
+msgid "Coinbase"
+msgstr ""
+
+#: includes/functions/class-exchange-rates-functions.php:128
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:201
+msgid "CoinMarketCap (for Cryptocurrencies)"
+msgstr ""
+
+#: includes/admin/class-product.php:37
+msgid "Currency per Product"
+msgstr ""
+
+#: includes/admin/class-product.php:199
+msgid "Product currency"
+msgstr ""
+
+#: includes/admin/class-product.php:200
+msgid "Update product after you change this field's value."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:25
+msgid "Advanced"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:111
+msgid "Advanced Options"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:120
+#: src/screens/tabs/AdvancedTab.js:134
+#: src/screens/tabs/AdvancedTab.js:148
+#: src/screens/tabs/AdvancedTab.js:162
+#: src/screens/tabs/BehaviourTab.js:134
+#: src/screens/tabs/BehaviourTab.js:191
+#: src/screens/tabs/BehaviourTab.js:252
+#: src/screens/tabs/ExchangeRatesTab.js:254
+#: src/screens/tabs/GeneralTab.js:131
+#: src/screens/tabs/GeneralTab.js:144
+#: src/screens/tabs/GeneralTab.js:170
+msgid "Enable"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:176
+msgid "Tools"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:181
+msgid "Re-calculate prices"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:220
+msgid "Delete all plugin's data"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:22
+msgid "Behaviour"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:105
+msgid "Shop Behaviour Options"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:117
+msgid "Show prices in different currencies (and set cart and checkout behaviour separately)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:118
+msgid "Convert to shop default currency (including cart and checkout)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:159
+msgid "Cart and Checkout Behaviour Options"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:171
+msgid "Convert to shop default currency"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:172
+msgid "Leave product currency (allow only one product to be added to cart)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:173
+msgid "Leave product currency (allow only same currency products to be added to cart)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:174
+msgid "Convert to currency of last product in cart"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:175
+msgid "Convert to currency of first product in cart"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:23
+#: src/screens/tabs/CurrenciesTab.js:238
+msgid "Currencies"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:24
+#: src/screens/dashboard.js:194
+msgid "Exchange Rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:145
+msgid "Exchange Rates Options"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:159
+msgid "Enter rates manually"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:177
+msgid "Update Hourly"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:178
+msgid "Update Twice Daily"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:179
+msgid "Update Daily"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:219
+msgid "( + ) Markup with Flat Rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:220
+msgid "( - ) Discount with Flat Rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:221
+msgid "( % ) Markup with Percentage"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:222
+msgid "( % ) Discount with Percentage"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:21
+msgid "General"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:100
+msgid "Currency per Product Options"
+msgstr ""
+
+#. Plugin Name of the plugin
+#: currency-per-product-for-woocommerce.php
+#: build/admin.js:1
+#: src/app.js:80
+msgid "Currency per Product for WooCommerce"
+msgstr ""
+
+#. Description of the plugin
+#: currency-per-product-for-woocommerce.php
+#: build/admin.js:1
+#: src/app.js:81
+msgid "Set and display prices for WooCommerce products in different currencies."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:121
+msgid "General Options"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:212
+#: src/screens/tabs/CurrenciesTab.js:211
+msgid "Active"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:212
+msgid "Inactive"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/formActions.js:63
+msgid "Reset Settings"
+msgstr ""
+
+#: includes/tyche/components/plugin-tracking/class-tyche-cpp-plugin-tracking.php:42
+msgid "Reset Usage Tracking"
+msgstr ""
+
+#: includes/tyche/components/plugin-tracking/class-tyche-cpp-plugin-tracking.php:43
+msgid "This will reset your usage tracking settings, causing it to show the opt-in banner again and not sending any data."
+msgstr ""
+
+#. Plugin URI of the plugin
+#: currency-per-product-for-woocommerce.php
+msgid "https://www.tychesoftwares.com/store/premium-plugins/currency-per-product-for-woocommerce"
+msgstr ""
+
+#. Author of the plugin
+#: currency-per-product-for-woocommerce.php
+msgid "Tyche Softwares"
+msgstr ""
+
+#. Author URI of the plugin
+#: currency-per-product-for-woocommerce.php
+msgid "https://www.tychesoftwares.com"
+msgstr ""
+
+#. translators: 1. Plugin Name, 2. WordPress Version
+#: includes/class-currency-per-product.php:263
+#, php-format
+msgid "You are using an outdated version of WordPress. %1$s requires WP version %2$s or higher."
+msgstr ""
+
+#. translators: 1. Plugin Name, 2. PHP Version
+#: includes/class-currency-per-product.php:269
+#, php-format
+msgid "%1$s requires PHP version %2$s or above. Please update PHP to run this plugin."
+msgstr ""
+
+#. translators: Plugin Name
+#: includes/class-currency-per-product.php:275
+#, php-format
+msgid "WooCommerce not found. %s requires a minimum of WooCommerce v3.3.0."
+msgstr ""
+
+#: includes/frontend/class-frontend.php:688
+msgid "Your cart contained products in a different currency. They have been removed, and your new product has been added."
+msgstr ""
+
+#: includes/frontend/class-frontend.php:694
+msgid "Only products with the same currency can be added to the cart. Clear the cart or complete the order before adding products in another currency."
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/formActions.js:55
+msgid "Save Changes"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/tokenField.js:42
+msgid "Search…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/tokenField.js:45
+msgid "Please enter at least 2 characters"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/tokenField.js:46
+msgid "No results found"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:58
+msgid "Add currencies"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:62
+msgid "Configure exchange rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:66
+msgid "Assign currencies to products"
+msgstr ""
+
+#: build/admin.js:1
+#: src/app.js:59
+#: src/screens/dashboard.js:97
+msgid "Dashboard"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:100
+msgid "Overview of your Currency per Product plugin"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:111
+msgid "Getting Started"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:118
+msgid "of"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:118
+msgid "completed"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:153
+msgid "Plugin Summary"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:164
+msgid "Plugin Status"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:168
+msgid "Enabled"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:169
+msgid "Disabled"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:179
+msgid "Active Currencies"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:183
+msgid "configured"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:184
+msgid "None"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:198
+msgid "Up to date"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:199
+msgid "Manual"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:209
+msgid "Per-Product Overrides"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:228
+msgid "Quick Tip"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:230
+msgid "You can assign a different currency to individual products, product categories, or tags. "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:232
+msgid "Visit the Configuration tab"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/dashboard.js:234
+msgid " to set up currencies and exchange rates, then assign them directly on each product's edit page."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:74
+msgid "Tracking has been successfully reset."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:76
+msgid "Error resetting tracking."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:73
+#: src/screens/tabs/BehaviourTab.js:73
+#: src/screens/tabs/CurrenciesTab.js:160
+#: src/screens/tabs/ExchangeRatesTab.js:119
+#: src/screens/tabs/GeneralTab.js:61
+msgid "Settings saved."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:76
+#: src/screens/tabs/BehaviourTab.js:76
+#: src/screens/tabs/CurrenciesTab.js:163
+#: src/screens/tabs/ExchangeRatesTab.js:122
+#: src/screens/tabs/GeneralTab.js:64
+msgid "Error saving settings."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:101
+msgid "Enable or disable the plugin functionality"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:107
+msgid "Enable Currency per Product"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:110
+msgid "Enable Plugin"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:122
+msgid "Configure general plugin options and preferences"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:128
+msgid "Currency Reports"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:141
+msgid "Custom Currency Symbol"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:155
+msgid "Currency Symbol Template"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:160
+#, js-format
+msgid "Replaced values: %currency_code%, %currency_symbol%."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:111
+msgid "Shop Behaviour"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:98
+msgid "Control how currency is displayed in shop pages"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:146
+msgid "Original Price Template (Shop)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:151
+#: src/screens/tabs/BehaviourTab.js:209
+#, js-format
+msgid "Replaced values: %price%, %price_raw%, %currency_code%."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:165
+msgid "Cart and Checkout Behaviour"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:204
+msgid "Original Price Template (Cart)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:222
+msgid "Shown when a customer tries to add a second product with a different currency."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:235
+msgid "Shown when a customer tries to add a product with a different currency to the cart."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:48
+msgid "Apply a specific currency based on the product's category"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:53
+msgid "Assign currency based on product tags"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:58
+msgid "Assign a default currency to each product author"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:68
+msgid "Use a specific currency for each payment gateway"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:115
+msgid "Select currency…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:181
+msgid "Enable optional modules below. Each active module adds a configuration field to every currency, letting you map categories, tags, authors, roles, or payment gateways per currency."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:225
+msgid "1 module active — configure each currency's settings in the Currencies section below."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:226
+msgid "modules active — configure each currency's settings in the Currencies section below."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:254
+msgid "Base Currency"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:257
+msgid "base"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:266
+msgid "— shop currency not configured —"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:314
+msgid "Remove currency"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:323
+msgid "Categories"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:331
+msgid "Search categories…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:342
+msgid "Tags"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:350
+msgid "Search tags…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:361
+msgid "Authors"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:376
+msgid "Select authors…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:404
+msgid "User Roles"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:415
+msgid "Select roles…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:435
+msgid "Payment Gateways"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:444
+msgid "Select gateways…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:471
+msgid "Add Currency"
+msgstr ""
+
+#: src/screens/tabs/ExchangeRatesTab.js:54
+msgid "1 minute until next update."
+msgstr ""
+
+#. translators: %d: number of minutes
+#: src/screens/tabs/ExchangeRatesTab.js:57
+#, js-format
+msgid "%d minutes until next update."
+msgstr ""
+
+#: src/screens/tabs/ExchangeRatesTab.js:91
+msgid "Exchange rates updated."
+msgstr ""
+
+#: src/screens/tabs/ExchangeRatesTab.js:94
+msgid "Error updating exchange rates."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:146
+msgid "Configure how exchange rates are updated and calculated"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:171
+msgid "Update Rate"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:191
+msgid "Update Server"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:213
+msgid "Exchange Fee Type"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:234
+msgid "Exchange Fee Amount"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:121
+msgid "Enable if you have issues with the currency symbol in mini cart. It will recalculate cart totals on each page load."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:131
+msgid "Sorting by Converted Price"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:145
+msgid "Filtering by Converted Price"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:149
+msgid "Use converted prices in WooCommerce \"Filter Products by Price\" widget."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:86
+msgid "Prices re-calculated successfully."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:88
+msgid "Error re-calculating prices."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:204
+msgid "Danger Zone"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:209
+msgid "Delete all plugin data"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:229
+msgid "Are you sure? This will delete ALL plugin data, options and product meta. There is no undo."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:99
+msgid "All plugin data deleted."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:101
+msgid "Error deleting plugin data."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/configuration.js:47
+msgid "Configure plugin options and preferences"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:18
+msgid "How do I add a currency to a specific product?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:19
+msgid "Open the product edit page in WooCommerce. In the Product Data section you will find a Currency per Product panel where you can choose a currency and enter prices. Save the product to apply the change."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:22
+msgid "Can customers add products in different currencies to the same cart?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:23
+msgid "This depends on the \"Cart and checkout behaviour\" setting. You can allow only products sharing the same currency, convert everything to the shop default currency, or convert to the currency of the last (or first) product added. Configure this under Configuration → Behaviour."
+msgstr ""
+
+#: build/admin.js:1
+#: src/app.js:71
+#: src/screens/faqs.js:48
+msgid "FAQs"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:51
+msgid "Frequently asked questions about Currency per Product for WooCommerce"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:59
+msgid "Frequently Asked Questions"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:62
+msgid "Find answers to the most common questions about Currency per Product for WooCommerce."
+msgstr ""
+
+#: build/admin.js:1
+#: src/app.js:65
+msgid "Configuration"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/formActions.js:77
+#: src/screens/tabs/AdvancedTab.js:224
+msgid "Cancel"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/formActions.js:78
+msgid "Reset"
+msgstr ""
+
+#: build/admin.js:1
+#: src/components/formActions.js:82
+msgid "Are you sure you want to reset settings from this section to their default values? This cannot be undone."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:111
+msgid "Displays product prices in your configured currencies across your store."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:132
+msgid "Adds a currency filter to WooCommerce Reports in the admin toolbar."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:145
+msgid "Use a custom currency symbol on the shop and in the admin. Configure the format using the template field below."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:167
+msgid "Round Off Product Prices"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:61
+#: src/screens/tabs/BehaviourTab.js:61
+#: src/screens/tabs/CurrenciesTab.js:148
+#: src/screens/tabs/ExchangeRatesTab.js:107
+#: src/screens/tabs/GeneralTab.js:88
+msgid "Settings have been successfully reset to default values."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:63
+#: src/screens/tabs/BehaviourTab.js:63
+#: src/screens/tabs/CurrenciesTab.js:150
+#: src/screens/tabs/ExchangeRatesTab.js:109
+#: src/screens/tabs/GeneralTab.js:90
+msgid "Error resetting settings."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:131
+msgid "Show Original Price in Shop"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:87
+msgid "Only applies when Shop Behaviour is not set to 'Convert to shop default currency.'"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:188
+msgid "Show Original Price in Cart, Checkout & Emails"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:217
+msgid "Single-Currency Cart Message"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:230
+msgid "Mixed-Currency Cart Restriction Message"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:243
+msgid "Location-Based Currency"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:249
+msgid "Auto-Detect Customer Location"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:47
+msgid "Currency by Product Category"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:52
+msgid "Currency by Product Tag"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:57
+msgid "Currency by Product Author"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:62
+msgid "Currency by Author's User Role"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:63
+msgid "Assigns currency based on the WordPress user role of the product's author"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:67
+msgid "Currency by Payment Gateway"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:178
+msgid "Currency Mapping Rules"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:152
+msgid "Rate Update Method"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:251
+msgid "Round Off Exchange Rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:270
+msgid "Configured Rates"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:295
+msgid "The base currency rate is always 1. All other rates are calculated relative to this."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:117
+msgid "Mini Cart Currency Fix"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:135
+msgid "Applies converted prices to WooCommerce's 'Sort by price' feature on the shop page."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:159
+msgid "Save Product Prices"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:163
+msgid "Saves converted prices to the database to prevent conflicts with other plugins. Each price is converted once and stored, rather than recalculated on every page load."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:191
+msgid "Recalculate Prices"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:194
+msgid "Saves converted prices for all products, used by the sort and filter features. This cannot be undone — run only when needed."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:232
+msgid "Permanently deletes all plugin settings, currencies, and product price overrides. This cannot be undone."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/AdvancedTab.js:225
+msgid "Delete"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:89
+#: src/screens/tabs/BehaviourTab.js:95
+msgid "Note: To use the Convert prices based on customer's location option, you must enable the Enable by Location option in the Additional Settings section."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:91
+#: src/screens/tabs/BehaviourTab.js:97
+msgid "Note: To use the Convert to User-Selected Currency option, you must add the Currency Switcher (CPP) widget to one of your site's widget areas (e.g., sidebar, footer, or header). This widget allows customers to select their preferred currency."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:245
+msgid "All Currencies for WooCommerce plugin"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:135
+msgid "Display original (unconverted) price on shop pages and product lists. Ignored, if 'Shop behaviour' option is set to 'Show prices in different currencies ...'"
+msgstr ""
+
+#: includes/class-currency-per-product.php:142
+#: includes/class-currency-per-product.php:151
+msgid "Not allowed."
+msgstr ""
+
+#: includes/class-currency-per-product.php:355
+msgid "Unlock All"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/GeneralTab.js:171
+msgid "Rounds converted prices to the nearest whole number (e.g. €9.87 → €10). "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:192
+#: src/screens/tabs/BehaviourTab.js:253
+#: src/screens/tabs/CurrenciesTab.js:207
+#: src/screens/tabs/CurrenciesTab.js:474
+#: src/screens/tabs/ExchangeRatesTab.js:182
+#: src/screens/tabs/ExchangeRatesTab.js:204
+#: src/screens/tabs/ExchangeRatesTab.js:225
+#: src/screens/tabs/ExchangeRatesTab.js:244
+#: src/screens/tabs/ExchangeRatesTab.js:258
+#: src/screens/tabs/GeneralTab.js:171
+msgid "Upgrade to Pro"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:119
+#: src/screens/tabs/BehaviourTab.js:176
+msgid "Convert to User-Selected Currency (PRO)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:120
+#: src/screens/tabs/BehaviourTab.js:177
+msgid "Convert prices based on customer's location (PRO)"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:192
+msgid "Display original price in cart, checkout pages and emails. Ignored, if 'Shop behaviour' option is set to 'Show prices in different currencies ...' "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/BehaviourTab.js:253
+msgid "Detects the customer's location via IP or geolocation and applies the matching currency automatically. Requires Shop Behaviour to be set to 'Convert prices based on customer's location.' "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/CurrenciesTab.js:392
+msgid "Search authors…"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:160
+msgid "Update rates automatically (PRO) "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:225
+msgid "Allows Addition/Deduction to the automatically calculated Exchange Rate for currency. This option only works when the 'Update rates automatically' is used in the 'Exchange rates updates' setting. "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/tabs/ExchangeRatesTab.js:258
+msgid "Rounds fetched exchange rates to whole numbers before applying them to product prices. "
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:26
+msgid "I enabled \"Show Original Price in Shop,\" but I do not see it on the frontend. Why?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:27
+msgid "The Show Original Price in Shop setting is ignored when prices are displayed in their assigned currencies. Review your Shop Behaviour setting to verify how prices are configured to appear."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:30
+msgid "Why are my converted prices different from live exchange rates?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:31
+msgid "The plugin uses the exchange rates configured in the Exchange Rates settings. In the Lite version, these rates are entered manually and do not update automatically. As a result, displayed prices may differ from current market exchange rates if the configured values are outdated. Automatic exchange rate updates are available in the Pro version."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:34
+msgid "When should I use the \"Recalculate Prices\" tool?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:35
+msgid "Use Recalculate Prices after updating exchange rates when Save Product Prices is enabled. This regenerates the saved converted prices for all products."
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:38
+msgid "I changed a currency symbol, but the old symbol still appears in the mini cart. What should I do?"
+msgstr ""
+
+#: build/admin.js:1
+#: src/screens/faqs.js:39
+msgid "Enable Mini Cart Currency Fix to recalculate cart totals on each page load and help resolve currency display issues in the mini cart."
+msgstr ""
